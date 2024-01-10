@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>9PM游戏组队 | 我的组队</title>
+  <meta content="游戏组队" name="keywords">
+  <link rel="icon" href="assets/img/controller_icon.png" type="image/x-icon" />
+  <meta name="Description" content="浏览，发布线上游戏组队信息。让你的宅家生活不再无聊">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+
+  <!-- =======================================================
+  * Template Name: Flexor - v2.2.0
+  * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/jquery/jquery.min.js"></script> -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!--<script src="jquery-3.5.1.js"></script>-->
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css" />
+  <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="personal.js"></script>
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <!-- <h1 class="text-light"><a href="index.html"><span id="easter_egg3">9PM</span></a></h1> -->
+        <a href="index.html"><img src="images/9pm_logo.png" alt="" class="img-fluid"></a>
+        <span id="easter_egg3" class="text-light" style="font-size: 2rem;"><a href="index.html">9PM</a></span>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">欢迎 Home</a></li> 
+          <li><a href="index.html#portfolio">组队 Team up</a></li>
+          <li><a href="index.html#team">热力榜</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li class="active"><a href="#myTeams">我的 My Teams</a></li>
+          <li><a href="login.html">登陆login/登出logout</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  <main id="myTeams" class="container">
+    <div id="tabs">
+        <ul>
+            <li><a href="#myTeamTab">My Team</a></li>
+            <li><a href="#interestedTeamTab">Interested Team</a></li>
+            <li><a href="#joinedTeamTab">Joined Team</a></li>
+          </ul>
+          <div id="myTeamTab">
+            <hr />
+            <h2><center><strong>My Team</strong></center></h2>
+            <!-- <br /> -->
+            <table class="table highlight" id="myTeam">
+                <thead>
+                    <tr>
+                        <th>Room ID</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Game</th>
+                        <th>Member 1</th> 
+                        <th>Member 2</th>
+                        <th>Member 3</th>
+                        <th>Member 4</th>
+                        <th></th>
+                        <th></th>
+                        <!-- <th></th> -->
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <br />
+          </div>
+          <div id="interestedTeamTab">
+            <hr />
+            <h2><center><strong>Interested Team</strong></center></h2>
+            <table class="table highlight" id="interestedTeam">
+                <thead>
+                    <tr>
+                        <th>Room ID</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Game</th>
+                        <th>Host</th> 
+                        <th>Member 1</th>
+                        <th>Member 2</th>
+                        <th>Member 3</th>
+                        <th></th>
+                        <!-- <th></th> -->
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+          </div>
+          <div id="joinedTeamTab">
+            <hr />
+            <h2><center><strong>Joined Team</strong></center></h2>
+            <table class="table highlight" id="joinedTeam">
+                <thead>
+                    <tr>
+                        <th>Room ID</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Game</th>
+                        <th>Host</th> 
+                        <th>Member 1</th>
+                        <th>Member 2</th>
+                        <th>Member 3</th>
+                        <th></th>
+                        <!-- <th></th> -->
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+          </div>
+    </div>
+    
+    
+    
+
+    <!--edit myTeam dialog-->
+    <table class="table dialog align_right" id="edit_myTeam_dialog" title="Edit Report Info">
+        <tr>
+            <td>Room ID:</td>
+            <td><input type="text" id="edit_room_id" /></td>
+        </tr>
+        <tr>
+            <td>Date:</td>
+            <td><input type="date" id="edit_date" /></td>
+        </tr>
+        <tr>
+            <td>Time:</td>
+            <td><input type="time" id="edit_time" /></td>
+        </tr>
+        <tr>
+            <td>Game:</td>
+            <td><input type="text" id="edit_game" /></td>
+        </tr>
+        <tr>
+            <td>Member 1:</td>
+            <td><input type="text" id="edit_member1" /></td>
+        </tr>
+        <tr>
+            <td>Member 2:</td>
+            <td><input type="text" id="edit_member2" /></td>
+        </tr>        
+        <tr>
+            <td>Member 3:</td>
+            <td><input type="text" id="edit_member3" /></td>
+        </tr>        
+        <tr>
+            <td>Member 4:</td>
+            <td><input type="text" id="edit_member4" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" id="edit_myTeam_btn" class="btn" value="Submit" /></td>
+        </tr>
+    </table>
+
+    <!--delete myTeam dialog-->
+    <div class="dialog" id="delete_myTeam_dialog" title="Are you sure?">
+        <table class="table">
+            <tr>
+                <td>Room ID:</td>
+                <td id="delete_room_id"></td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td id="delete_date"></td>
+            </tr>
+            <tr>
+                <td>Time:</td>
+                <td id="delete_time"></td>
+            </tr>
+            <tr>
+                <td>Game:</td>
+                <td id="delete_game"></td>
+            </tr>
+        </table>
+        <br />
+        <center>
+            <input type="button" id="yes_myTeam" class="btn" value="Yes" />
+            &nbsp;&nbsp;&nbsp;
+            <input type="button" class="no btn" value="No" />
+        </center>
+    </div>
+
+        <!--delete interestedTeam dialog-->
+        <div class="dialog" id="delete_interestedTeam_dialog" title="Are you sure?">
+            <table class="table">
+                <tr>
+                    <td>Room ID:</td>
+                    <td id="delete_room_id_int"></td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td id="delete_date_int"></td>
+                </tr>
+                <tr>
+                    <td>Time:</td>
+                    <td id="delete_time_int"></td>
+                </tr>
+                <tr>
+                    <td>Game:</td>
+                    <td id="delete_game_int"></td>
+                </tr>
+            </table>
+            <br />
+            <center>
+                <input type="button" id="yes_interestedTeam" class="btn" value="Yes" />
+                &nbsp;&nbsp;&nbsp;
+                <input type="button" class="no btn" value="No" />
+            </center>
+        </div>
+
+        <!--leave joinedTeam dialog-->
+        <div class="dialog" id="leave_joinedTeam_dialog" title="Are you sure?">
+            <table class="table">
+                <tr>
+                    <td>Room ID:</td>
+                    <td id="leave_room_id"></td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td id="leave_date"></td>
+                </tr>
+                <tr>
+                    <td>Time:</td>
+                    <td id="leave_time"></td>
+                </tr>
+                <tr>
+                    <td>Game:</td>
+                    <td id="leave_game"></td>
+                </tr>
+            </table>
+            <br />
+            <center>
+                <input type="button" id="yes_joinedTeam" class="btn" value="Yes" />
+                &nbsp;&nbsp;&nbsp;
+                <input type="button" class="no btn" value="No" />
+            </center>
+        </div>
+  </main>
+
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2 data-aos="fade-up">F.A.Q</h2>
+            <p data-aos="fade-up">常见问题汇总</p>
+          </div>
+  
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">如何知道有人想加入我的队伍呢？<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                  <p>
+                    当其他人点击加入队伍时，我们会以浏览器推送通知和邮件📧的方式通知您
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">9PM游戏组队有手机APP吗？<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                  <p>
+                    iOS和微信小程序版本正在玩命开发中，敬请期待📱
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">我的个人信息会被如何使用？<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                  <p>
+                    您的个人信息会被安全的储存在谷歌服务器上🔒。信息只会被用于该此网站的功能和个性化游戏推荐上。您的信息绝对不会被用作广告
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">组队功能需要付费吗？<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                  <p>
+                    本网站所有功能全部免费🆓。任何人都可以发布组队信息 
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="400">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">我很喜欢本站，如何给程序猿加鸡腿呢？ <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                  <p>
+                    如果喜欢本站，请向身边的朋友多多推荐就好啦！感谢您对我们的支持！🙏
+                  </p>
+                </div>
+              </li>
+  
+            </ul>
+          </div>
+  
+        </div>
+      </section><!-- End F.A.Q Section -->
+  
+    </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+      <div id="footer_icon_container">
+          <div class="homepage_footer_icons mail_white_icon" onclick="window.open('mailto:yum001@ucsd.edu')">
+            <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
+            </div>
+          </div>
+          <div class="homepage_footer_icons github_black_icon" onclick="window.open ('https://github.com/YueqianMa/Unicode_Hackathon')">
+            <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
+            </div>
+          </div>
+  
+          <div class="homepage_footer_icons green_icon" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
+            <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
+              <img id="wechat" src="images/wechatQR3.jpg" style="opacity: 1; z-index: 1;">
+            </div>
+          </div>
+  
+          <div class="homepage_footer_icons facebook_blue_icon" onclick="window.open ('https://www.facebook.com')">
+            <div id="homepage_footer_widget_facebook" class="homepage_footer_widgets">
+            </div>
+          </div>  
+  
+          <div class="homepage_footer_icons ins_pink_icon" onclick="window.open('https://www.instagram.com')">
+            <div id="homepage_footer_widget_instagram" class="homepage_footer_widgets">
+            </div>
+          </div>
+        </div>
+  
+      <div class="container d-lg-flex py-4">
+        <div class="mr-lg-auto text-center text-lg-left"  style="text-align: center;">
+          <div class="copyright">
+            Copyright &copy; <script>document.write(new Date().getFullYear());</script> <strong>9PM</strong> All rights reserved.
+          </div>
+          <div style="opacity: 0.3;" >
+              This template is made with ❤ by <a href="https://bootstrapmade.com/" target="_blank" class="text-primary">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+  
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <script>
+        function showImg(id) {
+          document.getElementById(id).style.opacity = 1;
+          document.getElementById(id).style.zIndex = "1";
+        }
+        function hideImg(id) {
+          document.getElementById(id).style.opacity = 0;
+          document.getElementById(id).style.zIndex = "-1";
+        }
+    </script>
+  </body>
+  
+  </html>
+
+
+
+
